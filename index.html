@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Ahmed Fun World</title>
+  <style>
+    body {
+      font-family: 'Arial', sans-serif;
+      background-color: #f0f8ff;
+      text-align: center;
+    }
+    h1 {
+      color: #333;
+      font-size: 36px;
+      margin-top: 20px;
+    }
+    iframe {
+      margin: 20px auto;
+      width: 80%;
+      height: 300px;
+    }
+    .news-section {
+      margin: 20px;
+    }
+    .affiliate-btn {
+      background-color: #ff9900;
+      color: white;
+      padding: 12px 24px;
+      text-decoration: none;
+      border-radius: 5px;
+      display: block;
+      width: 200px;
+      margin: 10px auto;
+    }
+    .buttons-section button {
+      background-color: #4CAF50;
+      color: white;
+      padding: 10px 20px;
+      margin: 10px;
+      border: none;
+      cursor: pointer;
+      border-radius: 5px;
+      font-size: 18px;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>Welcome to Ahmed Fun World 🎉</h1>
+
+  <iframe src="https://www.youtube.com/embed/dQw4w9WgXcQ" title="YouTube Video" frameborder="0" allowfullscreen></iframe>
+
+  <div class="news-section">
+    <h3>Top News Platforms:</h3>
+    <a class="affiliate-btn" href="https://www.bbc.com" target="_blank">Visit BBC News</a>
+    <a class="affiliate-btn" href="https://www.cnn.com" target="_blank">Visit CNN News</a>
+  </div>
+
+  <div class="ads-section">
+    <h3>Advertisement:</h3>
+    <a class="affiliate-btn" href="https://www.amazon.com" target="_blank">Buy Cool Gadgets from Amazon</a>
+  </div>
+
+  <div class="buttons-section">
+    <button onclick="changeColor()">Change Background Color</button>
+    <button onclick="playMusic()">Play Music</button>
+    <button onclick="alert('Button 3 Clicked')">Surprise Button!</button>
+  </div>
+
+  <audio id="music" src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3"></audio>
+
+  <footer>
+    <p>© 2025 Ahmed Fun World. All rights reserved.</p>
+  </footer>
+
+  <script>
+    function changeColor() {
+      document.body.style.backgroundColor = '#' + Math.floor(Math.random() * 16777215).toString(16);
+    }
+
+    function playMusic() {
+      const music = document.getElementById('music');
+      music.play();
+    }
+  </script>
+  
+</body>
+</html>
